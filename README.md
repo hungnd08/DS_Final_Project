@@ -28,10 +28,10 @@ Ngày: 2/1/2020
 |Slide|6/1/2020|Nguyễn Duy Hưng|  
 
 ### II. Kế hoạch làm
-1. Chọn đặc trưng  
+1. **Chọn đặc trưng**  
 Dữ liệu hiện tại của nhóm gồm 11 cột với cột `humidity` là cần dự đoán. Nhóm dự tính sẽ bỏ cột `visibility`, `apparentTemparature` vì nhóm nhận thấy 2 cột này không có ảnh hưởng đến độ ẩm. Cột `time` nhóm sẽ tách ra thành 2 cột là `date (Ngày bao nhiêu trong tháng đó)` và `month` và bỏ đi cột `time` => Dữ liệu train bây giờ sẽ có 9 đặc trưng
 
-2. Các model nhóm sẽ huấn luyện  
+2. **Các model nhóm sẽ huấn luyện**  
 Dữ liệu của nhóm sẽ chia làm 3 tập `train`, `validation` và `test` theo tỉ lệ `6:2:2`  
 Nhóm sẽ lựa chọn model `Linear Regression`  
 Các cột có giá trị thiếu nhóm sẽ lần lượt thử các phương pháp `mean`, `median`, `mode`, `k nearest neighbor` => Thử trên tập `validation` => Chọn phương pháp tốt nhất (1)  
